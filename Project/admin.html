@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="signup.css">
+    
+</head>
+<body>
+
+
+    <button class="add-button btn-outline-info" onclick="addForm()">Add User</button>
+
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h1>Registration</h1>
+
+        <lebel for="username">Username :</lebel><br>     
+        <input type="text" id="username" name="username" placeholder="username" autofocus required /><br><br>
+        
+        <lebel for="email">Email :</lebel> <br>
+        <input type="email" id="email" name="email" placeholder="E-mail"  autofocus  required/><br><br>
+    
+        <button type="submit" class="btn btn-outline-primary">Login</button>
+        <button type="button" class="btn cancel btn-outline-danger" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    </div><br><br>
+
+
+        <button type="button"  class="display-button btn-outline-info" onclick="displayTable()">Display Data</button>
+
+        <div class="display" id="display">
+            <table>
+                <tr>
+                  <th>Username</th>
+                  <th>Email</th>
+                  <th>Phone No.</th>
+                </tr>
+                <tr>
+                  <td>Raj Sharma</td>
+                  <td>r.sharma@gmail.com</td>
+                  <td>8784467864</td>
+                </tr>
+                <tr>
+                  <td>Pawan Patil</td>
+                  <td>pawan232patil@yahoo.com</td>
+                  <td>9746513546</td>
+                </tr>
+                <tr>
+                  <td>Divya Kumar</td>
+                  <td>kumardiv453@yahoo.com</td>
+                  <td>7854631654</td>
+                </tr>
+                <tr>
+                  <td>Ganesh Rahu</td>
+                  <td>ganerahu431@gmail.com</td>
+                  <td>8454465412</td>
+                </tr>
+              </table>
+          </div>
+
+
+<script src="form.js"></script>
+
+</body>
+</html>
